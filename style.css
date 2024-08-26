@@ -2,114 +2,102 @@ body{
     background-color: rgb(251, 236, 236);
 }
 
-header{
-    border: 8px;
-    border-color: black;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    align-items:flex-end;
-    text-align: center;    
-}
 
-#nombre{
-    color: rgb(0, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: aliceblue;
-    border-style: double;
-}
 
-#nombre:hover{
-    background-color: rgb(230, 173, 196);
-}
+
 
 img{
-    border-radius: 20%;
-    border-width: 3px;
-    border-color: rgb(255, 89, 108);
-    border-style: groove;
-    margin-top: 3%;
-}
-
-img:hover{
+    margin-top: 1%;
+    margin-left: 10%;
     border-radius: 100%;
-    border-color:blue;
     border-style:hidden;
 }
 
-.primerparrafo{
-text-align: center;
-margin: auto;
-font-size:larger;
-font-family: sans-serif;
+
+.carousel {
+    margin: 0 auto;
+    width: 80%; /* Ajusta según sea necesario */
+  }
+
+  .carousel-item img {
+    margin: 0 auto;
+    display: block;
 }
 
-.segundoparrafo{
-text-align: center;
-margin: auto;
-font-size: larger;
-font-family: sans-serif;
-}
+  
 
-span{
-    color: darkblue;
-}
-
-#experiencia{
-    text-align: center;
-    margin: auto;
-    font-size: larger;
-    font-family: sans-serif;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.table-container {
+.card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden en líneas si la pantalla es pequeña */
 }
 
-th, td:hover{
-    border-color: rgb(150, 127, 255);
+.card {
+    flex: 1 1 300px; /* Las tarjetas ocupan el mismo ancho y son flexibles */
+    max-width: 350px; /* Ancho máximo para evitar que ocupen toda la pantalla */
+    min-width: 280px; /* Ancho mínimo para asegurar que sean responsive */
+    margin: 10px; /* Margen adicional para evitar que se peguen al borde */
+    overflow: hidden; /* Evita que el contenido se desborde de la tarjeta */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados a las tarjetas */
 }
+
+.card-body{
+    background-color: rgb(178, 164, 205);
+}
+
+.card:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0); /* Opcional: agrega una sombra suave */
+}
+
+.card-img-top {
+    width: 75%;
+    height: 30%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin deformarse */
+    display: block; /* Asegura que la imagen se comporte como un bloque y no como un inline-block */
+}
+
+.card-title {
+    text-align: center;
+    font-family: cursive;
+}
+
+.card-text {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 10%;
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Las tarjetas ocupan todo el ancho disponible en pantallas pequeñas */
+    }
+}
+
+.list-group{
+    text-align: center;
+}
+
+
 
 #contacto{
     font-size: large;
     margin: 2%;
     text-align-last: center;
 }
+  
+  .logos {
+    size: 15%;
 
-a{
-    color: blue;
+  }
+  
+
+a:link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 a:hover {
-  color: rgb(251, 6, 149);
-  background-color: transparent;
+  color: rgb(255, 251, 0);
 }
-
-
-.logos{
-    border: none;
-    border-style:none;
-    border-style: none;
-}
- .logos:hover{
-    border:none;
- }
